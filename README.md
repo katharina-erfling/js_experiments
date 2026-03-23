@@ -9,9 +9,11 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 
 ## 📁 Projektstruktur
 
+```
 /
-├── index.html       ← Übersichtsseite
-└── [experiment]/    ← je ein Ordner pro Experiment
+├── index.html        ← Übersichtsseite
+└── [experiment]/     ← je ein Ordner pro Experiment
+```
 
 ---
 
