@@ -8,11 +8,13 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 ---
 
 ## 📁 Projektstruktur
-
 ```
 /
 ├── index.html        ← Übersichtsseite
-└── [experiment]/     ← je ein Ordner pro Experiment
+└── js/
+    ├── hallo-welt.js
+    ├── uebungen1.js
+    └── uebungen2.js
 ```
 
 ---
@@ -21,7 +23,9 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 
 | Projekt | Beschreibung | Themen |
 |--------|-------------|--------|
-| *(kommt bald)* | | |
+| hallo-welt.js | Einstieg in JavaScript | console.log, alert |
+| uebungen1.js | Erste JS-Übungen | console.log, alert, typeof, Operatoren, prompt, String-Methoden |
+| uebungen2.js | Zahlensysteme & Präzision | Binär, Oktal, Hexadezimal, Exponentialnotation, Rundungsfehler, IEEE-754 |
 
 ---
 
