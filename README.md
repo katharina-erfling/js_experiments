@@ -1,4 +1,5 @@
 # 🧪 JS Experiments
+
 Eine wachsende Sammlung von JavaScript-Übungen und Mini-Projekten – entstanden beim Lernen im Rahmen der Frontend Developer Zertifizierung JavaScript.
 
 🚧 Work in Progress  
@@ -11,7 +12,9 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 /
 ├── index.html        ← Übersichtsseite
 └── js/
-    └── uebungen1.js
+    ├── hallo-welt.js
+    ├── uebungen1.js
+    └── uebungen2.js
 ```
 
 ---
@@ -20,14 +23,18 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 
 | Projekt | Beschreibung | Themen |
 |--------|-------------|--------|
+| hallo-welt.js | Einstieg in JavaScript | console.log, alert |
 | uebungen1.js | Erste JS-Übungen | console.log, alert, typeof, Operatoren, prompt, String-Methoden |
+| uebungen2.js | Zahlensysteme & Präzision | Binär, Oktal, Hexadezimal, Exponentialnotation, Rundungsfehler, IEEE-754 |
 
 ---
 
 ## 🛠️ Technologien
+
 JavaScript (ES6+) · HTML5 · CSS3
 
 ---
 
 ## 📚 Kontext
+
 Teil der **Frontend Developer Zertifizierung** bei GFN (extern zertifiziert durch WPI), März – Juni 2026.
