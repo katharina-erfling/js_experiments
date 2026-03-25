@@ -14,7 +14,8 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 └── js/
     ├── hallo-welt.js
     ├── uebungen1.js
-    └── uebungen2.js
+    ├── uebungen2.js
+    └── uebungen3.js
 ```
 
 ---
@@ -26,6 +27,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | hallo-welt.js | Einstieg in JavaScript | console.log, alert |
 | uebungen1.js | Erste JS-Übungen | console.log, alert, typeof, Operatoren, prompt, String-Methoden |
 | uebungen2.js | Zahlensysteme & Präzision | Binär, Oktal, Hexadezimal, Exponentialnotation, Rundungsfehler, IEEE-754 |
+| uebungen3.js | Strings & Typkonvertierung | Verkettung, Template Strings, Escape-Zeichen, implizite & explizite Typkonvertierung, NaN |
 
 ---
 
