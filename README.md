@@ -28,7 +28,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | hallo-welt.js | Einstieg in JavaScript | console.log, alert |
 | uebungen1.js | Erste JS-Übungen | console.log, alert, typeof, Operatoren, prompt, String-Methoden |
 | uebungen2.js | Zahlensysteme & Präzision | Binär, Oktal, Hexadezimal, Exponentialnotation, Rundungsfehler, IEEE-754 |
-| uebungen3.js | Strings & Typkonvertierung | Verkettung, Template Strings, Escape-Zeichen, implizite & explizite Typkonvertierung, NaN |
+| uebungen3.js | Strings & Typkonvertierung | Verkettung, Template Strings, Escape-Zeichen, Zitate in Strings, prompt(), Konstanten, implizite & explizite Typkonvertierung, NaN |
 | uebungen4.js | Typkonvertierung & Rechner | Ausdrücke & Datentypen, Kraftstoffverbrauchsrechner, toFixed() |
 | uebungen5.js | Math-Objekt | Math.floor(), Math.round(), Math.random(), prompt(), Number() |
 
