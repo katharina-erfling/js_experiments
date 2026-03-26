@@ -16,7 +16,8 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
     ├── uebungen2.js
     ├── uebungen3.js
     ├── uebungen4.js
-    └── uebungen5.js
+    ├── uebungen5.js
+    └── uebungen6.js
 ```
 
 ---
@@ -31,6 +32,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | uebungen3.js | Strings & Typkonvertierung | Verkettung, Template Strings, Escape-Zeichen, Zitate in Strings, prompt(), Konstanten, implizite & explizite Typkonvertierung, NaN |
 | uebungen4.js | Typkonvertierung & Rechner | Ausdrücke & Datentypen, Kraftstoffverbrauchsrechner, toFixed() |
 | uebungen5.js | Math-Objekt | Math.floor(), Math.round(), Math.random(), prompt(), Number() |
+| uebungen6.js | If/Else & Bedingungen | if/else, else if, Vergleichsoperatoren, Nutzereingaben, Schaltjahrberechnung, Rabattlogik |
 
 ---
 
@@ -40,4 +42,4 @@ JavaScript (ES6+) · HTML5 · CSS3
 ---
 
 ## 📚 Kontext
-Teil der **Frontend Developer Zertifizierung** bei GFN (extern zertifiziert durch WPI), März – Juni 2026.
+Teil von **Softwareentwicklerin Frontend Javascript Zertifizierung** bei GFN (extern zertifiziert durch WPI), März – Juni 2026.
