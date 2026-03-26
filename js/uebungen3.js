@@ -65,6 +65,7 @@ console.log('..........');
 
 
 
+
 /*Übung 7 - Fehler im Detail*/
 console.log('Übung 5 - Fehler im Detail');
 
@@ -72,6 +73,9 @@ const TALE = `Alice was beginning to get very tired of sitting by her sister on 
 
 console.log(TALE);
 console.log('..........');
+
+
+
 
 
 
@@ -89,3 +93,12 @@ console.log('..........');
 
 
 
+
+/*Übung 9 - Knowledge Check*/
+
+console.log('Übung 9 - Knowledge Check');
+
+let prename = 'Alix';
+let city = 'Köln'
+
+console.log(`Das ist ${prename} aus ${city}.`)
