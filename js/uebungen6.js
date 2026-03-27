@@ -55,8 +55,8 @@ console.log('..........');
 /*Übung 0 - Undefined*/
 console.log('Übung 0 - Undefined');
 
-let age;
-console.log(age);
+let myAge;
+console.log(myAge);
 console.log('..........');
 
 
@@ -206,9 +206,9 @@ if (lastName.length >= 2 && lastName.length <= 100) {
 
 
 
-let Age = prompt('Wie alt bis du?')
+let age = prompt('Wie alt bis du?')
 
-if (Number(Age) >= 0 && Number(Age) < 150) {
+if (Number(age) >= 0 && Number(age) < 150) {
     alert('Dein Alter ist korrekt!');
 } else {
     alert('Dein Alter ist nicht korrekt');
