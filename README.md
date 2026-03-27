@@ -32,7 +32,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | uebungen3.js | Strings & Typkonvertierung | Verkettung, Template Strings, Escape-Zeichen, Zitate in Strings, prompt(), Konstanten, implizite & explizite Typkonvertierung, NaN |
 | uebungen4.js | Typkonvertierung & Rechner | Ausdrücke & Datentypen, Kraftstoffverbrauchsrechner, toFixed() |
 | uebungen5.js | Math-Objekt | Math.floor(), Math.round(), Math.random(), prompt(), Number() |
-| uebungen6.js | If/Else & Bedingungen | if/else, else if, Vergleichsoperatoren, Nutzereingaben, Schaltjahrberechnung, Rabattlogik |
+| uebungen6.js | If/Else & Bedingungen | if/else, else if, Vergleichsoperatoren, Booleans, null, undefined, Nutzereingaben, Eingabevalidierung, String-Methoden (startsWith, toLowerCase, length), Schaltjahrberechnung, Rabattlogik |
 
 ---
 
