@@ -6,6 +6,61 @@
 
 
 
+/*Übung 0 - Booleans Einstieg*/
+console.log('Übung 0 - Booleans Einstieg');
+
+let javaScriptStudent = true;
+let javaScriptProfi = false;
+
+
+let isAdult = true;
+let hasID = false;
+
+console.log(isAdult && hasID);
+console.log(isAdult || hasID);
+console.log(!isAdult);
+
+console.log('..........');
+
+
+
+
+/*Übung 0 - Sonniges Wochenende*/
+console.log('Übung 0 - Sonniges Wochenende');
+
+let isWeekend = false;
+let isSunny = true;
+
+console.log(isWeekend && isSunny);
+
+
+
+
+
+/*Übung 0 - Null*/
+console.log('Übung 0 - Null');
+
+
+let favoriteColor = null;
+console.log(favoriteColor);
+
+
+
+console.log('..........');
+
+
+
+
+
+/*Übung 0 - Undefined*/
+console.log('Übung 0 - Undefined');
+
+let age;
+console.log(age);
+console.log('..........');
+
+
+
 
 
 /*Übung 1 - Rechner*/
@@ -64,14 +119,32 @@ if (playerFitness === 'Ja') {
         alert('Nope!');
     }
 
+    let fightTwo = prompt('Was ist das deutsche Wort für "If"?');
+    if (fightTwo === 'wenn' || fightTwo === 'falls'){
+        alert('Ja, genau!');
+    }
+    else {
+        alert('Nein, das ist falsch!');
+    }
+
+    let fightThree = prompt('Bitte gib jetzt einen String mit einer Länge zwischen 8 und 15 Zeichen ein')
+
+    if (fightThree.length >= 8 && fightThree.length <= 15) {
+        alert('Richtig!');
+    } 
+    else {
+        alert('Das ist nicht korrekt!');
+    }
+
+
 } else {
     alert('Oh... Besser ist es wohl');
 }
+console.log('..........');
 
 
 
-
-/*Übung 4 - Schaltjahr*/
+/*Übung 4 - Schaltjahr*/ /*
 console.log('Übung 4 - Schaltjahr');
 
 let year = prompt('Nenne ein Jahr:');
@@ -89,5 +162,68 @@ else {
   alert(`Das Jahr ${year} ist kein Schaltjahr`);
 }
 
+console.log('..........'); */
 
 
+
+/*Übung 4 - Schaltjahr - Alternative*/ 
+console.log('Übung 4 - Schaltjahr - Alternative');
+
+let year = Number(prompt('Trag ein Jahr ein:'))
+
+if (year % 400 === 0 || (year % 4 === 0 && year % 100 !== 0)) {
+    console.log(`Das Jahr ${year} ist ein Schaltjahr!`);
+} else {
+    console.log(`Das Jahr ${year} ist kein Schaltjahr.`);
+}
+console.log('..........');
+
+
+
+
+/*Übung 5 - Von guten und bösen Eingaben*/
+console.log('Übung 5 - Von guten und bösen Eingaben');
+
+
+let firstName = prompt('Wie ist dein Vorname?');
+
+if (firstName.length >= 2 && firstName.length <= 100) {
+    alert('Vorname gültig!');
+} else {
+    alert('Dein Vorname muss zwischen 2 und 100 Zeichen lang sein!');
+}
+
+
+
+
+let lastName = prompt('Wie ist dein Nachname?');
+
+if (lastName.length >= 2 && lastName.length <= 100) {
+    alert('Nachname ist gültig!');
+} else {
+    alert('Dein Nachname muss zwischen 2 und 100 Zeichen lang sein!' )
+}
+
+
+
+let Age = prompt('Wie alt bis du?')
+
+if (Number(Age) >= 0 && Number(Age) < 150) {
+    alert('Dein Alter ist korrekt!');
+} else {
+    alert('Dein Alter ist nicht korrekt');
+}
+
+
+
+let favoriteDrink = prompt('Was ist dein Lieblings-Heißgetränk?');
+
+if (!favoriteDrink.toLowerCase().startsWith('c') && !favoriteDrink.toLowerCase().startsWith('t')) {
+    alert('Glaub ich dir nicht!');
+} 
+
+else {
+    alert('Gute Wahl!');
+}
+
+console.log('..........');
