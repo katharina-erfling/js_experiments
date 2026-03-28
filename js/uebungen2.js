@@ -4,6 +4,8 @@
 /* ----------------- */
 
 
+/*Übung 1 - Zahlensysteme Übung*/
+
 /*1. Variablen erstellen: Schreibe Variablen für jedes Zahlensystem – Binary, Octal, Hexadecimal und Exponential.
 2. Werte überprüfen: Gib die Werte in der Konsole aus und vergleiche sie mit ihrer Dezimalumrechnung. */
 
@@ -34,6 +36,11 @@ console.log('----------------------------------')
 /* ---------------------------------- */
 /*Zahlensysteme Weiterführende Übung */
 /* --------------------------------- */
+
+/*Übung 2 - Weiterführende Zahlensysteme Übung*/
+
+console.log('Weiterführende Zahlensysteme Übung') 
+
 
 /* Aufgabe 1: Eigene Binärzahl
 - Erstelle eine neue Variable mit einer selbst gewählten Binärzahl.
@@ -84,6 +91,81 @@ console.log(0.6);              // => 0.6
 // können im Binärsystem nicht exakt dargestellt werden –
 // die kleinen Ungenauigkeiten summieren sich beim Addieren.
 
+
+
+
+
+
+
+
+
+/* ---------------------------------- */
+/* Operatoren Übung */
+/* --------------------------------- */
+
+
+
+/*Übung 3 - Operatoren Übung*/
+console.log('Übung 3 - Operatoren Übung');
+
+let zahl1 = 5;
+let zahl2 = 10;
+
+console.log(zahl1 + zahl2);
+console.log(zahl1 - zahl2);
+console.log(zahl1 * zahl2);
+console.log(zahl1 / zahl2);
+console.log(zahl1 % zahl2);
+
+
+
+console.log('..........');
+
+
+
+
+
+/*Übung 4 - Inkrement/ Dekrement Übung*/
+console.log('Übung 4 - Inkrement/ Dekrement Übung');
+
+let score = 10;
+console.log(`Vorher: ${score}`);
+
+console.log(++score);
+console.log(--score);
+console.log(`Zwischenstand: ${score}`)
+
+console.log(score++);
+console.log(score--)
+console.log(`Endstand: ${score}`)
+console.log('..........');
+
+
+
+
+/*Übung 5 - Arithmetische Operatoren*/
+console.log('Übung 5 - Arithmetische Operatoren');
+
+let result = (10 + 5) * 2 / 3;
+console.log(result);
+console.log('..........');
+
+
+
+
+
+
+/*Übung 6 - Kombinierte Zuweisungsoperatoren*/
+console.log('Übung 6 - Kombinierte Zuweisungsoperatoren');
+
+let balance = 100;
+
+console.log(balance += 10);
+console.log(balance -= 5);
+console.log(balance *= 2);
+console.log(balance /= 2);
+
+console.log('..........');
 
 
 
