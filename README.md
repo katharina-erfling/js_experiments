@@ -19,7 +19,8 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
     ├── uebungen5.js
     ├── uebungen6.js
     ├── uebungen7.js
-    └── uebungen8.js
+    ├── uebungen8.js
+    └── uebungen9.js
 ```
 
 ---
@@ -37,6 +38,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | uebungen6.js | If/Else & Bedingungen | if/else, else if, Vergleichsoperatoren, Booleans, null, undefined, Nutzereingaben, Eingabevalidierung, String-Methoden (startsWith, toLowerCase, length), Schaltjahrberechnung, Rabattlogik |
 | uebungen7.js | String Methods | indexOf(), lastIndexOf(), substring(), trim(), charAt(), replaceAll(), includes(), startsWith(), toLowerCase() |
 | uebungen8.js | Funktionen | Arrow Functions, Parameter, Rückgabewerte, Ternärer Operator in Template Strings, Guard Clauses, Restparameter (...rest), forEach(), verschachtelte Funktionen |
+| uebungen9.js | Arrays | Array erstellen, length, Indexzugriff, push(), unshift(), pop(), splice(), slice(), join(), indexOf() |
 
 ---
 
