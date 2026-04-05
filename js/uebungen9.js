@@ -132,9 +132,15 @@ console.log('------------------')
 
 
 
+
+
+
+
+
 // Übung 8 -  Kurzstreckenfahrt
 console.log('Übung 8 -  Kurzstreckenfahrt');
 
+// Alle Haltestellen der Linie W
 const LINE_W = [
   'Astoria-Ditmars Blvd',
   'Astoria Blvd',
@@ -145,10 +151,112 @@ const LINE_W = [
   'Queensboro Plaza',
 ];
 
-const NEW_LINE =  LINE_W.slice(4,7);
-console.log(NEW_LINE);
+// Haltestellen ab Index 4 bis Ende
+const NEW_LINE = LINE_W.slice(4, 7);
 
-let zielwunsch = prompt('Wohin möchtest du fahren?'); 
-let zielindex = NEW_LINE.indexOf(zielwunsch);
+// Benutzereingaben für Start und Ziel
+let startwunsch = prompt('Wo fährst du ab?');
+let zielwunsch = prompt('Wohin möchtest du fahren?');
+
+// Gibt alle Haltestellen von Start bis Ziel zurück
+let fahrplan = (start, ziel) => {
+    let startindex = LINE_W.indexOf(start); // Position der Starthaltestelle
+    let zielindex = LINE_W.indexOf(ziel);   // Position der Zielhaltestelle
+
+    return LINE_W.slice(startindex, zielindex + 1); // +1 damit Ziel inklusive ist
+};
+
+console.log(fahrplan(startwunsch, zielwunsch));
+console.log('------------------')
 
 
+
+
+
+
+
+
+// Übung 9 -  Arrays sortieren
+console.log('Übung 9 -  Arrays sortieren');
+
+let customersOnline4 = [
+    'Herbert',
+    'Judith',
+    'Amaya',
+    'Zephir',
+    'Siandra',
+    'Elyano',
+];
+console.log(customersOnline4);
+
+customersOnline4.sort();
+
+console.log(customersOnline4);
+
+console.log('------------------')
+
+
+
+
+
+
+// Übung 10 -  Arrays verbinden mit join
+console.log('Übung 10 -  Arrays verbinden mit join');
+
+let customersOnline5 = [
+    'Herbert',
+    'Judith',
+    'Amaya',
+    'Zephir',
+    'Siandra',
+    'Elyano',
+];
+
+console.log(customersOnline5.join('\n'));
+console.log('------------------')
+
+
+
+
+// Übung 11 -  Position ermitteln mit indexOf()
+console.log('Übung 11 -  Position ermitteln mit indexOf()');
+
+let customersOnline6 = [
+    'Herbert',
+    'Judith',
+    'Amaya',
+    'Zephir',
+    'Siandra',
+    'Elyano',
+]
+
+console.log(customersOnline6.indexOf('Elyano'));
+console.log('------------------')
+
+
+
+
+// Übung 12 -  Passwort erstellen mit split, reverse und join
+console.log('Übung 12 -  Passwort erstellen mit split, reverse und join');
+
+let passwortFor = (firstName) => firstName.split('').reverse().join('') + firstName.length;
+console.log(passwortFor('Amaya'));
+
+
+
+console.log('------------------')
+
+
+
+
+
+// Übung 13 - Alte Listen
+console.log('Übung 13 - Alte Listen');
+
+let productList = '3Doodler 3D Printing Pen, Game of Thrones Wax Seal Coasters, 10th Doctor Sonic Screwdriver Exclusive Programmable TV Remote, Electronic Butterfly in a Jar, Aquafarm: Aquaponics Fish Garden, Cassette Adapter Bluetooth, Marvel Comics Lightweight Infinity Scarf, Ollie - The App Controlled Robot, Sound Splash Bluetooth Waterproof Shower Speaker, PowerCube, Backpack of Holding, Retro Duo Portable NES/SNES Game System, Universal Gadget Wrist Charger, USB Squirming Tentacle, USB Fishquarium, Space Bar Keyboard Organizer & USB Hub Pop, USB Pet Rock, Powerstation 5- E. Maximus Chargus, Dual Heated Travel Mug, Crosley Collegiate Portable USB Turntable, Meh Hoodie, Magnetic Accelerator Cannon, 8-Bit Heat-Change Mug';
+
+let handleCsv = (product) => productList.split(',').sort().join('\n');
+console.log(handleCsv(productList));
+
+
+console.log('------------------')
