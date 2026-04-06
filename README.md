@@ -40,7 +40,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | uebungen7.js | String Methods | indexOf(), lastIndexOf(), substring(), trim(), charAt(), replaceAll(), includes(), startsWith(), toLowerCase() |
 | uebungen8.js | Funktionen | Arrow Functions, Parameter, Rückgabewerte, Ternärer Operator in Template Strings, Guard Clauses, Restparameter (...rest), forEach(), verschachtelte Funktionen |
 | uebungen9.js | Arrays | Array erstellen, length, Indexzugriff, push(), unshift(), pop(), splice(), slice(), join(), sort(), indexOf(), split(), reverse() |
-| uebungen10.js | Higher Order Functions | sort() mit Vergleichsfunktion, map(), filter(), forEach(), endsWith(), verschachtelte Arrow Functions | 
+| uebungen10.js | Higher Order Functions | sort() mit Vergleichsfunktion, map(), filter(), forEach(), reduce(), some(), every(), includes(), endsWith(), Callback-Parameter, verschachtelte Arrow Functions |
 
 ---
 
