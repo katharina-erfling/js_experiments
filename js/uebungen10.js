@@ -1,0 +1,268 @@
+/* ----------------- */
+/* High Order Funktionen*/
+/* ----------------- */
+
+'use strict'
+
+
+
+
+// Übung 1 -  Sort Übung
+console.log('Übung 1 -  Sort Übung');
+
+// Prüft ob ein Name mit (Admin) endet
+let isAdmin = (name) => name.endsWith('(Admin)');
+
+// Vergleichsfunktion: Admins immer vorne, Rest alphabetisch
+let compareChatParticipants = (a, b) => {
+    if (isAdmin(a)) return -1;
+    if (isAdmin(b)) return 1;
+    return a > b ? 1 : -1;
+}
+
+let customersOnline = [
+    'Herbert',
+    'Gudrun',
+    'JD',
+    'Turk',
+    'Gronkh (Admin)',
+]
+
+// Sortieren und zeilenweise ausgeben
+console.log(customersOnline.sort(compareChatParticipants).join('\n'));
+console.log('------------------')
+
+
+
+
+
+
+
+
+
+
+// Übung 2 -  Stadt Land Fluss
+console.log('Übung 2 -  Stadt Land Fluss');
+
+// Sortiert ein Array nach Wortlänge, längstes zuerst
+let sortByLength = (category) => category.sort((a, b) => b.length - a.length);
+
+let city = ['Barcelona', 'Basel', 'Belgrade', 'Berlin', 'Budapest'];
+let country = ['Belgium', 'Bulgaria', 'Brazil', 'Bolivia', 'Bosnia and Herzegovina'];
+let river = ['Bode', 'Brahmaputra', 'Beuvron', 'Black River', 'Belaja'];
+
+console.log(sortByLength(city));
+console.log(sortByLength(country));
+console.log(sortByLength(river));
+console.log('------------------')
+
+
+
+
+
+
+
+
+
+
+// Übung 3 -  Arrays transformieren mit map()
+console.log('Übung 3 -  Arrays transformieren mit map()');
+
+// Dreht den Namen um und hängt die Namenslänge an
+let passwortFor = (name) => name.split('').reverse().join('') + name.length;
+
+let employees = [
+    'Adelgunde',
+    'Heribert',
+    'Mechthild',
+    'Friedlinde',
+    'Tusnelda',
+    'Oswine',
+    'Ladislaus',
+];
+
+// Passwort für jeden Mitarbeiter generieren
+let passwords = employees.map(passwortFor);
+
+console.log(passwords);
+console.log('------------------')
+
+
+
+
+
+
+
+// Übung 4 - map() Lückentext
+console.log('Übung 4 - map() Lückentext');
+
+let results2;
+let inputs2 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// Jeden Wert verdoppeln
+results2 = inputs2.map((n) => n * 2);
+console.log(results2);
+
+// Jeden Wert quadrieren
+results2 = inputs2.map((n) => n * n);
+console.log(results2);
+
+console.log('------------------');
+
+
+
+
+
+
+
+// Übung 5 - Der transformierte Ladislaus, Teil 4
+console.log('Übung 5 - Der transformierte Ladislaus, Teil 4');
+
+// Kürzt Vornamen zu Initialen und setzt Nachname dahinter
+let transformName = (firstNames, lastName) =>
+    `${firstNames.map((name) => `${name.charAt(0)}.`).join(' ')} ${lastName}`;
+
+console.log(transformName(['Ladislaus', 'Coolio', 'Barry'], 'Jones'));
+
+console.log('------------------');
+
+
+
+// Übung 6 - Liste filtern - Begriffe mit bestimmtem Anfangsbuchstaben
+console.log('Übung 6 - Liste filtern - Begriffe mit bestimmtem Anfangsbuchstaben');
+
+// Gibt alle Produkte zurück die mit dem angegebenen Buchstaben beginnen
+let productsStartingwith2 = (letter, products2) =>
+    products2.filter((product2) => product2.startsWith(letter)); 
+
+let products2 = [
+    'Game of Thrones Wax Seal Coasters',
+    'Electronic Butterfly in a Jar',
+    'Aquafarm: Aquaponics Fish Garden',
+    'Cassette Adapter Bluetooth',
+    'Marvel Comics Lightweight Infinity Scarf',
+    'Ollie - The App Controlled Robot',
+    'Sound Splash Bluetooth Waterproof Shower Speaker',
+    'PowerCube',
+    'Backpack of Holding',
+    'Retro Duo Portable NES/SNES Game System',
+    'Universal Gadget Wrist Charger',
+    'USB Squirming Tentacle',
+    'USB Fishquarium',
+    'Space Bar Keyboard Organizer & USB Hub Pop',
+    'USB Pet Rock',
+    'Powerstation 5- E. Maximus Chargus',
+    'Dual Heated Travel Mug',
+    'Crosley Collegiate Portable USB Turntable',
+    'Meh Hoodie',
+    'Magnetic Accelerator Cannon',
+];
+
+// Alle Produkte die mit 'M' beginnen ausgeben
+console.log(productsStartingwith2('M', products2));
+
+console.log('------------------');
+
+
+
+
+
+// Übung 7 - Liste filtern - For Each
+console.log('Übung 7 - Liste filtern - For Each');
+
+
+let productsStartingWith = (letter, products) =>
+  products.filter((product) => product.startsWith(letter));
+
+let products = [
+  'Game of Thrones Wax Seal Coasters',
+  'Electronic Butterfly in a Jar',
+  'Aquafarm: Aquaponics Fish Garden',
+  'Cassette Adapter Bluetooth',
+  'Marvel Comics Lightweight Infinity Scarf',
+  'Ollie - The App Controlled Robot',
+  'Sound Splash Bluetooth Waterproof Shower Speaker',
+  'PowerCube',
+  'Backpack of Holding',
+  'Retro Duo Portable NES/SNES Game System',
+  'Universal Gadget Wrist Charger',
+  'USB Squirming Tentacle',
+  'USB Fishquarium',
+  'Space Bar Keyboard Organizer & USB Hub Pop',
+  'USB Pet Rock',
+  'Powerstation 5- E. Maximus Chargus',
+  'Dual Heated Travel Mug',
+  'Crosley Collegiate Portable USB Turntable',
+  'Meh Hoodie',
+  'Magnetic Accelerator Cannon',
+];
+
+'ABCDEGMO'.split('').forEach((letter) => {
+  console.log(`\n==== ${letter} ====`);
+  console.log(productsStartingWith(letter, products).join('\n'));
+});
+
+console.log('------------------');
+
+
+
+
+
+
+
+// Übung 8 - Friedemann Friese
+console.log('Übung 8 - Friedemann Friese');
+
+// Prüft ob ein Spielname mit 'F' beginnt
+let startsWithLetterF = (game) => game.startsWith('F');
+
+let boardgames = [
+  'Caverna',
+  'Puerto Rico',
+  'Agricola',
+  'Black Friday',
+  'Funny Friends',
+  'Fauna',
+  'Eclipse',
+  'Codenames',
+  'Dominion',
+  'Fairy Tale',
+  'Fast Flowing Forest Fellers',
+  'Fearsome Floors'
+];
+
+// Nur Spiele die mit 'F' beginnen herausfiltern
+let boardgamesStartingWithF = boardgames.filter(startsWithLetterF);
+
+console.log(boardgamesStartingWithF);
+// => [ 'Funny Friends', 'Fauna', 'Fairy Tale', 'Fast Flowing Forest Fellers', 'Fearsome Floors']
+console.log('------------------');
+
+
+
+
+
+
+// Übung 9 - Lückentext zu filter
+console.log('Übung 9 - Lückentext zu filter');
+
+'use strict';
+
+let result;
+let results;
+
+// Nur gerade Zahlen behalten (Rest bei Division durch 2 ist 0)
+let inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+results = inputs.filter((n) => n % 2 === 0);
+console.log(results); // => [2, 4, 6, 8, 10]
+
+// Nur Namen die auf 'e' oder 'a' enden behalten
+let names = ['Heribert', 'Friedlinde', 'Tusnelda', 'Oswine', 'Ladislaus'];
+results = names.filter((name) => name.endsWith('e') || name.endsWith('a'));
+console.log(results); // => [ 'Friedlinde', 'Tusnelda', 'Oswine' ]
+
+// String aufteilen, Wörter unter 3 Buchstaben rausfiltern, wieder zusammensetzen
+let text = 'Hi this is a short text';
+result = text.split(' ').filter((word) => word.length >= 3).join(' ');
+console.log(result); // => 'this short text'
+console.log('------------------');
