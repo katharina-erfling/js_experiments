@@ -248,21 +248,247 @@ console.log('Übung 9 - Lückentext zu filter');
 
 'use strict';
 
-let result;
-let results;
+let result3;
+let results3;
 
 // Nur gerade Zahlen behalten (Rest bei Division durch 2 ist 0)
-let inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-results = inputs.filter((n) => n % 2 === 0);
-console.log(results); // => [2, 4, 6, 8, 10]
+let inputs3 = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+results3 = inputs3.filter((n) => n % 2 === 0);
+console.log(result3); // => [2, 4, 6, 8, 10]
 
 // Nur Namen die auf 'e' oder 'a' enden behalten
-let names = ['Heribert', 'Friedlinde', 'Tusnelda', 'Oswine', 'Ladislaus'];
-results = names.filter((name) => name.endsWith('e') || name.endsWith('a'));
-console.log(results); // => [ 'Friedlinde', 'Tusnelda', 'Oswine' ]
+let names5 = ['Heribert', 'Friedlinde', 'Tusnelda', 'Oswine', 'Ladislaus'];
+results3 = names5.filter((name) => name.endsWith('e') || name.endsWith('a'));
+console.log(results3); // => [ 'Friedlinde', 'Tusnelda', 'Oswine' ]
 
 // String aufteilen, Wörter unter 3 Buchstaben rausfiltern, wieder zusammensetzen
-let text = 'Hi this is a short text';
-result = text.split(' ').filter((word) => word.length >= 3).join(' ');
-console.log(result); // => 'this short text'
+let text3 = 'Hi this is a short text3';
+result3 = text3.split(' ').filter((word) => word.length >= 3).join(' ');
+console.log(result3); // => 'this short text3'
 console.log('------------------');
+
+
+
+
+
+// Übung 10 - Quersumme berechnen
+console.log('Übung 10 - Quersumme berechnen');
+
+let add2 = (x, y) => x + y;
+
+let digitSum2 = (number) => String(number).split('').map(Number).reduce(add2, 0)
+
+
+
+console.log(digitSum2(4242));
+console.log('------------------');
+
+
+
+
+
+
+// Übung 11 - Some
+console.log('Übung 11 - Some');
+
+const AGE_OF_MAJORITY = 18;
+
+let ageRatings = [
+  6,
+  6,
+  6,
+  0,
+  12,
+  16,
+  0,
+  18, // FSK18-Film im Warenkorb
+  6,
+  0,
+  6,
+];
+
+// Prüft ob mindestens eine Altersfreigabe 18 ist
+let isForAdultsOnly = (ratings) =>
+  ratings.some((ageRating) => ageRating === AGE_OF_MAJORITY);
+
+// Altersverifizierung anfordern falls nötig
+if (isForAdultsOnly(ageRatings)) console.log('Please verify your age.');
+
+console.log('------------------');
+
+
+
+
+
+// Übung 12 - Gewinner
+console.log('Übung 12 - Gewinner');
+
+const WINNER_NAMES1 = [
+  'Heribert',
+  'Friedlinde',
+  'Tusnelda',
+  'Oswine',
+  'Ladislaus',
+];
+
+// Ersten drei Gewinner mit Platzierung versehen, Rest bleibt unverändert
+const WITH_PLACE2 = (winners2) =>
+  winners2.map((winner2, i) => (i < 3 ? `Gewinner ${i + 1}: ${winner2}`: winner2));
+
+console.log(WITH_PLACE2(WINNER_NAMES1));
+console.log('------------------');
+
+
+
+
+
+
+
+// Übung 13 - Richtige Gewinner
+console.log('Übung 13 - Richtige Gewinner');
+
+const WINNER_NAMES = [
+  'Heribert',
+  'Friedlinde',
+  'Tusnelda',
+  'Oswine',
+  'Ladislaus',
+];
+
+// Ersten drei mit englischer Ordinalzahl (1st, 2nd, 3rd), Rest unverändert
+const WITH_PLACE = (winners) =>
+  winners.map((winner, i) =>
+    i < 3
+      ? `${i + 1}${i === 0 ? 'st' : ''}${i === 1 ? 'nd' : ''}${
+          i === 2 ? 'rd' : ''
+        } place: ${winner}`
+      : winner
+  );
+
+console.log(WITH_PLACE(WINNER_NAMES));
+console.log('------------------');
+
+
+
+
+
+
+
+
+// Übung 14 - Callback Parameter
+console.log('Übung 14 - Callback Parameter');
+
+// Alle drei Callback-Parameter ausgeben: value, index, array
+[
+  'Heribert',
+  'Friedlinde',
+  'Tusnelda',
+  'Oswine',
+  'Ladislaus',
+].forEach((v, i, a) => console.log(`v: ${v}, i: ${i}, a: ${a}`));
+console.log('------------------');
+
+
+
+
+
+
+
+
+
+// Übung 15 - Lückentext zu Higher-Order-Funktionen
+console.log('Übung 15 - Lückentext zu Higher-Order-Funktionen');
+
+let result;
+let results;
+let inputs = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+let text = 'Hi this is a short text';
+let names = ['Heribert', 'Friedlinde', 'Tusnelda', 'Oswine', 'Ladislaus'];
+
+// Nur ungerade Zahlen behalten
+results = inputs.filter((n) => n % 2 !== 0);
+console.log(results); // => [ 1, 3, 5, 7, 9 ]
+
+// Alle Zahlen aufaddieren
+result = inputs.reduce((sum, n) => sum + n, 0);
+console.log(result); // => 55
+
+// Alle Zahlen multiplizieren
+result = inputs.reduce((product, n) => product * n, 1);
+console.log(result); // => 3628800
+
+// Länge des längsten Worts ermitteln
+result = text.split(' ').map((word) => Math.max(longest, word));
+console.log(result); // => 5
+
+// Längstes Wort finden
+result = text.split(' ').reduce((res, word) => (res.length > word.length ? res : word));
+console.log(result); // => short
+
+// Durchschnittliche Wortlänge berechnen
+result = text.split(' ').map(x => x.length).reduce((sum, x) => sum + x) / text.split(' ').length;
+console.log(result); // => 3
+
+// Nach drittem Buchstaben sortieren
+results = names.sort((a, b) => (a.charAt(2) > b.charAt(2) ? 1 : -1));
+console.log(results); // => [ 'Ladislaus', 'Friedlinde', 'Heribert', 'Tusnelda', 'Oswine' ]
+
+// Prüfen ob mindestens ein Name mehr als 8 Buchstaben hat
+result = names.some((name) => name.length > 8);
+console.log(result); // => true
+
+// Prüfen ob alle Namen mindestens 8 Buchstaben haben
+result = names.every(name => name.length >= 8);
+console.log(result); // => false
+
+// Kleinsten Wert im Array finden
+result = inputs.reduce((a, b) => Math.min(a, b));
+console.log(result); // => 1
+
+console.log('------------------');
+
+
+
+
+
+
+
+
+// Übung 16 - Fröhliches Mixen mit Arrays
+console.log('Übung 16 - Fröhliches Mixen mit Arrays');
+
+// Prüft ob eine Zutat in der Zutatenliste vorhanden ist
+let hasIngredient = (listOfIngredients, searchedIngredient) =>
+  listOfIngredients.includes(searchedIngredient);
+
+// Prüft ob alle Zutaten eines Rezepts in der verfügbaren Liste vorhanden sind
+let isMixableWith = (cocktailRecipe, availableIngredients) =>
+  cocktailRecipe.every((ingredientFromRecipe) =>
+    hasIngredient(availableIngredients, ingredientFromRecipe)
+  );
+
+let honoluluFlip = [
+  'Maracuja Juice',
+  'Pineapple Juice',
+  'Lemon Juice',
+  'Grapefruit Juice',
+  'Crushed Ice',
+];
+
+let ingredientsFromMyBar = [
+  'Pineapple',
+  'Maracuja Juice',
+  'Cream',
+  'Lemon Juice',
+  'Grapefruit Juice',
+  'Crushed Ice',
+  'Milk',
+  'Apple Juice',
+  'Aperol',
+  'Pineapple Juice',
+  'Limes',
+  'Lemons',
+];
+
+// Kann der Honolulu Flip mit den verfügbaren Zutaten gemixt werden?
+console.log(isMixableWith(honoluluFlip, ingredientsFromMyBar)); // => true
