@@ -21,7 +21,8 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
     ├── uebungen7.js
     ├── uebungen8.js
     ├── uebungen9.js
-    └── uebungen10.js
+    ├── uebungen10.js
+    └── uebungen11.js
 ```
 
 ---
@@ -41,6 +42,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | uebungen8.js | Funktionen | Arrow Functions, Parameter, Rückgabewerte, Ternärer Operator in Template Strings, Guard Clauses, Restparameter (...rest), forEach(), verschachtelte Funktionen |
 | uebungen9.js | Arrays | Array erstellen, length, Indexzugriff, push(), unshift(), pop(), splice(), slice(), join(), sort(), indexOf(), split(), reverse() |
 | uebungen10.js | Higher Order Functions | sort() mit Vergleichsfunktion, map(), filter(), forEach(), reduce(), some(), every(), includes(), endsWith(), Callback-Parameter, verschachtelte Arrow Functions |
+| uebungen11.js | Objekte | Objekte erstellen, Punkt- & Bracket-Notation, Methoden, this, Destructuring, Renaming-Destructuring, Default-Werte, Rest-Operator, Shorthand Properties, CSV-Verarbeitung |
 
 ---
 
