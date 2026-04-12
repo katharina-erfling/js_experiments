@@ -9,20 +9,27 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 ## 📁 Projektstruktur
 ```
 /
-├── index.html        ← Übersichtsseite
-└── js/
-    ├── hallo-welt.js
-    ├── uebungen1.js
-    ├── uebungen2.js
-    ├── uebungen3.js
-    ├── uebungen4.js
-    ├── uebungen5.js
-    ├── uebungen6.js
-    ├── uebungen7.js
-    ├── uebungen8.js
-    ├── uebungen9.js
-    ├── uebungen10.js
-    └── uebungen11.js
+├── index.html              ← Übersichtsseite
+├── hallo-welt.js
+├── uebungen1.js
+├── uebungen2.js
+├── uebungen3.js
+├── uebungen4.js
+├── uebungen5.js
+├── uebungen6.js
+├── uebungen7.js
+├── uebungen8.js
+├── uebungen9.js
+├── uebungen10.js
+├── uebungen11.js
+├── dom-abfragen/           ← DOM Selektoren & Abfragen
+│   ├── index.html
+│   └── js/
+│       └── script.js
+└── dom-test/               ← DOM Manipulation
+    ├── index.html
+    └── js/
+        └── script.js
 ```
 
 ---
@@ -43,6 +50,8 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | uebungen9.js | Arrays | Array erstellen, length, Indexzugriff, push(), unshift(), pop(), splice(), slice(), join(), sort(), indexOf(), split(), reverse() |
 | uebungen10.js | Higher Order Functions | sort() mit Vergleichsfunktion, map(), filter(), forEach(), reduce(), some(), every(), includes(), endsWith(), Callback-Parameter, verschachtelte Arrow Functions |
 | uebungen11.js | Objekte | Objekte erstellen, Punkt- & Bracket-Notation, Methoden, this, Destructuring, Renaming-Destructuring, Default-Werte, Rest-Operator, Shorthand Properties, CSV-Verarbeitung |
+| dom-abfragen/ | DOM Selektoren & Abfragen | querySelector(), querySelectorAll(), CSS-Selektoren, Attributselektoren, Pseudo-Klassen, $$() |
+| dom-test/ | DOM Manipulation | innerHTML, Element-Inhalte setzen, Template Literals im DOM |
 
 ---
 
