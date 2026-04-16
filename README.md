@@ -26,10 +26,13 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 │   ├── index.html
 │   └── js/
 │       └── script.js
-└── dom-test/               ← DOM Manipulation
-    ├── index.html
-    └── js/
-        └── script.js
+├── dom-test/               ← DOM Manipulation
+│   ├── index.html
+│   └── js/
+│       └── script.js
+└── artikellaenge/          ← CSS-Klasse per Textlänge
+    ├── artikellaenge.html
+    └── artikellaenge.js
 ```
 
 ---
@@ -52,6 +55,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | uebungen11.js | Objekte | Objekte erstellen, Punkt- & Bracket-Notation, Methoden, this, Destructuring, Renaming-Destructuring, Default-Werte, Rest-Operator, Shorthand Properties, CSV-Verarbeitung |
 | dom-abfragen/ | DOM Selektoren & Abfragen | querySelector(), querySelectorAll(), CSS-Selektoren, Attributselektoren, Pseudo-Klassen, $$() |
 | dom-test/ | DOM Manipulation | innerHTML, Element-Inhalte setzen, Template Literals im DOM |
+| artikellaenge/ | CSS-Klasse per Textlänge | classList.add(), innerHTML.length, querySelector()-Kurzschreibweise, Guard Clauses |
 
 ---
 
