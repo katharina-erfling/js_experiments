@@ -30,9 +30,12 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 │   ├── index.html
 │   └── js/
 │       └── script.js
-└── artikellaenge/          ← CSS-Klasse per Textlänge
-    ├── artikellaenge.html
-    └── artikellaenge.js
+├── artikellaenge/          ← CSS-Klasse per Textlänge
+│   ├── artikellaenge.html
+│   └── artikellaenge.js
+└── buy-button/             ← Button Toggle
+    ├── index.html
+    └── buy_button.js
 ```
 
 ---
@@ -56,6 +59,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | dom-abfragen/ | DOM Selektoren & Abfragen | querySelector(), querySelectorAll(), CSS-Selektoren, Attributselektoren, Pseudo-Klassen, $$() |
 | dom-test/ | DOM Manipulation | innerHTML, Element-Inhalte setzen, Template Literals im DOM |
 | artikellaenge/ | CSS-Klasse per Textlänge | classList.add(), innerHTML.length, querySelector()-Kurzschreibweise, Guard Clauses |
+| buy-button/ | Button Toggle | disabled, Event Listener, querySelector(), gegenseitiges Aktivieren/Deaktivieren |
 
 ---
 
