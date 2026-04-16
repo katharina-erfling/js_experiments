@@ -33,9 +33,12 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 ├── artikellaenge/          ← CSS-Klasse per Textlänge
 │   ├── artikellaenge.html
 │   └── artikellaenge.js
-└── buy-button/             ← Button Toggle
+├── buy-button/             ← Button Toggle
+│   ├── index.html
+│   └── buy_button.js
+└── running-light/          ← Lauflicht per mouseover
     ├── index.html
-    └── buy_button.js
+    └── running_light.js
 ```
 
 ---
@@ -60,6 +63,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | dom-test/ | DOM Manipulation | innerHTML, Element-Inhalte setzen, Template Literals im DOM |
 | artikellaenge/ | CSS-Klasse per Textlänge | classList.add(), innerHTML.length, querySelector()-Kurzschreibweise, Guard Clauses |
 | buy-button/ | Button Toggle | disabled, Event Listener, querySelector(), gegenseitiges Aktivieren/Deaktivieren |
+| running-light/ | Lauflicht per mouseover | mouseover, src-Manipulation, forEach(), Index-Logik, gespeicherte DOM-Abfrage |
 
 ---
 
