@@ -27,6 +27,9 @@ $('p').style.color = 'blue';
         $('#red_range').addEventListener('input', readAndSetColor);
         $('#green_range').addEventListener('input', readAndSetColor);
         $('#blue_range').addEventListener('input', readAndSetColor);
+
+        $('#inc').addEventListener('click', incFontSize);
+        $('#dec').addEventListener('click', decFontSize);
     }
 
 
@@ -47,6 +50,14 @@ $('p').style.color = 'blue';
         $('p').style.color = color;
     };
 
+    const incFontSize = () => changeFontSizeTo(currentFontSize() + 5);
+    const decFontSize = () => changeFontSizeTo(currentFontSize() - 5);
+
+    const currentFontSize = () => parseInt(getComputedStyle($('p')).fontSize);
+
+    const changeFontSizeTo = (size) => {
+        $('p').style.fontSize = size + 'px';
+    };
 
 
     init();
