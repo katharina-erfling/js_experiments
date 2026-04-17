@@ -36,7 +36,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 ├── buy-button/             ← Button Toggle
 │   ├── index.html
 │   └── buy_button.js
-└── running-light/          ← Lauflicht per mouseover
+└── running-light/          ← Glühbirnen-Experimente
     ├── index.html
     └── running_light.js
 ```
@@ -63,7 +63,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | dom-test/ | DOM Manipulation | innerHTML, Element-Inhalte setzen, Template Literals im DOM |
 | artikellaenge/ | CSS-Klasse per Textlänge | classList.add(), innerHTML.length, querySelector()-Kurzschreibweise, Guard Clauses |
 | buy-button/ | Button Toggle | disabled, Event Listener, querySelector(), gegenseitiges Aktivieren/Deaktivieren |
-| running-light/ | Lauflicht per mouseover | mouseover, src-Manipulation, forEach(), Index-Logik, gespeicherte DOM-Abfrage |
+| running-light/ | Glühbirnen-Experimente – 4 Varianten: Chase (mouseover), Click, Chaos (Math.random()), Hopping (2er-Sprünge) | mouseover, click, src-Manipulation, forEach(), Math.random(), Index-Logik |
 
 ---
 
