@@ -44,10 +44,14 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 │   ├── index.html
 │   ├── style.css
 │   └── font_size.js
-└── tooltips/               ← Maus-Tooltips mit Lookup-Objekt
+├── tooltips/               ← Maus-Tooltips mit Lookup-Objekt
+│   ├── index.html
+│   ├── tooltips.css
+│   └── tooltips.js
+└── awesome-tours/          ← Bilderinfo per data-* Attributen
     ├── index.html
-    ├── tooltips.css
-    └── tooltips.js
+    ├── awesome_tours.css
+    └── awesome_tours.js
 ```
 
 ---
@@ -75,6 +79,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | running-light/ | Glühbirnen-Experimente – 4 Varianten: Chase (mouseover), Click, Chaos (Math.random()), Hopping (2er-Sprünge) | mouseover, click, src-Manipulation, forEach(), Math.random(), Index-Logik |
 | font-games/ | Schriftgröße, Farbe & Hintergrund per Button und Range-Slider – inkl. inkrementeller +/- Buttons | style.fontSize, style.color, style.backgroundColor, input-Event, rgb(), getComputedStyle(), parseInt(), Block-Scoping |
 | tooltips/ | Maus-Tooltips die dem Cursor folgen – Texte per Lookup-Objekt, Fallback mit ?? | mousemove, mouseleave, clientX/Y, position: absolute, Lookup-Objekt, Nullish Coalescing (??) |
+| awesome-tours/ | Bildbeschreibungen per mouseover aus data-* Attributen lesen und anzeigen | data-* Attribute, dataset, Attributselektor, mouseover, Template Literals, innerHTML |
 
 ---
 
