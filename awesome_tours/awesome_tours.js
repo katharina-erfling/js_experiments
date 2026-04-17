@@ -1,36 +1,32 @@
 'use strict';
 
-const $ = (queryselector) => document.querySelector(queryselector);
-const $$ = (queryselector) => Array.from(document.querySelectorAll(queryselector));
+// Kurzschreibweise für querySelector / querySelectorAll
+const $ = (qs) => document.querySelector(qs);
+const $$ = (qs) => Array.from(document.querySelectorAll(qs));
 
 {
-    const showInfo = (element) => {
+    // Info-Box mit Name, Flagge und Beschreibung befüllen
+    const showInfo = (event) => {
         $('#info').innerHTML =
-       ` <h3>
-            <img src="${country(element)}.png" alt="${flagName(element)}" title="${flagName(element)}">
-            ${name(element)}
-        </h3>
-        <p>${desc(element)}</p>`;
+            `<h3>
+                <img src="${country(event)}.png" alt="${flagName(event)}" title="${flagName(event)}">
+                ${name(event)}
+            </h3>
+            <p>${desc(event)}</p>`;
     };
 
+    // Hilfsfunktionen: Daten aus dem event.target auslesen
+    const name     = (event) => event.target.alt;                      // alt-Attribut
+    const desc     = (event) => event.target.dataset.description;      // data-description
+    const country  = (event) => event.target.dataset.countryCode;      // data-country-code
+    const flagName = (event) => event.target.dataset.flagName;         // data-flag-name
 
-    const name = (element) => element.target.alt;
-    const desc = (element) => element.target.dataset.description;
-    const country = (element) => element.target.dataset.countryCode;
-    const flagName = (element) => element.target.dataset.flagName;
-
-
+    // Event-Listener an alle Bilder mit data-description hängen
     const init = () => {
         $$('img[data-description]').forEach((img) => {
             img.addEventListener('mouseover', showInfo);
         });
-
-
     };
 
-
     init();
-
-
-
-};
+}
