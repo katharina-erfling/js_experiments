@@ -9,19 +9,20 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 ## 📁 Projektstruktur
 ```
 /
-├── index.html              ← Übersichtsseite
-├── hallo-welt.js
-├── uebungen1.js
-├── uebungen2.js
-├── uebungen3.js
-├── uebungen4.js
-├── uebungen5.js
-├── uebungen6.js
-├── uebungen7.js
-├── uebungen8.js
-├── uebungen9.js
-├── uebungen10.js
-├── uebungen11.js
+├── kleine-uebungen/        ← Übungsaufgaben
+│   ├── index.html
+│   ├── hallo-welt.js
+│   ├── uebungen1.js
+│   ├── uebungen2.js
+│   ├── uebungen3.js
+│   ├── uebungen4.js
+│   ├── uebungen5.js
+│   ├── uebungen6.js
+│   ├── uebungen7.js
+│   ├── uebungen8.js
+│   ├── uebungen9.js
+│   ├── uebungen10.js
+│   └── uebungen11.js
 ├── dom-abfragen/           ← DOM Selektoren & Abfragen
 │   ├── index.html
 │   └── js/
@@ -39,10 +40,14 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 ├── running-light/          ← Glühbirnen-Experimente
 │   ├── index.html
 │   └── running_light.js
-└── font-games/             ← Schriftgröße, Farbe & Hintergrund
+├── font-games/             ← Schriftgröße, Farbe & Hintergrund
+│   ├── index.html
+│   ├── style.css
+│   └── font_size.js
+└── tooltips/               ← Maus-Tooltips mit Lookup-Objekt
     ├── index.html
-    ├── style.css
-    └── font_size.js
+    ├── tooltips.css
+    └── tooltips.js
 ```
 
 ---
@@ -69,6 +74,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | buy-button/ | Button Toggle | disabled, Event Listener, querySelector(), gegenseitiges Aktivieren/Deaktivieren |
 | running-light/ | Glühbirnen-Experimente – 4 Varianten: Chase (mouseover), Click, Chaos (Math.random()), Hopping (2er-Sprünge) | mouseover, click, src-Manipulation, forEach(), Math.random(), Index-Logik |
 | font-games/ | Schriftgröße, Farbe & Hintergrund per Button und Range-Slider – inkl. inkrementeller +/- Buttons | style.fontSize, style.color, style.backgroundColor, input-Event, rgb(), getComputedStyle(), parseInt(), Block-Scoping |
+| tooltips/ | Maus-Tooltips die dem Cursor folgen – Texte per Lookup-Objekt, Fallback mit ?? | mousemove, mouseleave, clientX/Y, position: absolute, Lookup-Objekt, Nullish Coalescing (??) |
 
 ---
 
