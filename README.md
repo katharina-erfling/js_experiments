@@ -36,9 +36,13 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 ├── buy-button/             ← Button Toggle
 │   ├── index.html
 │   └── buy_button.js
-└── running-light/          ← Glühbirnen-Experimente
+├── running-light/          ← Glühbirnen-Experimente
+│   ├── index.html
+│   └── running_light.js
+└── font-games/             ← Schriftgröße, Farbe & Hintergrund
     ├── index.html
-    └── running_light.js
+    ├── style.css
+    └── font_size.js
 ```
 
 ---
@@ -64,6 +68,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | artikellaenge/ | CSS-Klasse per Textlänge | classList.add(), innerHTML.length, querySelector()-Kurzschreibweise, Guard Clauses |
 | buy-button/ | Button Toggle | disabled, Event Listener, querySelector(), gegenseitiges Aktivieren/Deaktivieren |
 | running-light/ | Glühbirnen-Experimente – 4 Varianten: Chase (mouseover), Click, Chaos (Math.random()), Hopping (2er-Sprünge) | mouseover, click, src-Manipulation, forEach(), Math.random(), Index-Logik |
+| font-games/ | Schriftgröße, Farbe & Hintergrund per Button und Range-Slider | style.fontSize, style.color, style.backgroundColor, input-Event, rgb(), Block-Scoping |
 
 ---
 
