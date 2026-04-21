@@ -22,7 +22,8 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 │   ├── uebungen8.js
 │   ├── uebungen9.js
 │   ├── uebungen10.js
-│   └── uebungen11.js
+│   ├── uebungen11.js
+│   └── uebungen12.js
 ├── dom-abfragen/           ← DOM Selektoren & Abfragen
 │   ├── index.html
 │   └── js/
@@ -72,6 +73,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | uebungen9.js | Arrays | Array erstellen, length, Indexzugriff, push(), unshift(), pop(), splice(), slice(), join(), sort(), indexOf(), split(), reverse() |
 | uebungen10.js | Higher Order Functions | sort() mit Vergleichsfunktion, map(), filter(), forEach(), reduce(), some(), every(), includes(), endsWith(), Callback-Parameter, verschachtelte Arrow Functions |
 | uebungen11.js | Objekte | Objekte erstellen, Punkt- & Bracket-Notation, Methoden, this, Destructuring, Renaming-Destructuring, Default-Werte, Rest-Operator, Shorthand Properties, CSV-Verarbeitung |
+| uebungen12.js | Rekursion | Rekursive Summe, Kombinatorik (Pascal'sches Dreieck), Fibonacci mit Memoization, String-Umkehrung, Maximum in Array, Tiefe verschachtelter Arrays, Summe verschachtelter Arrays |
 | dom-abfragen/ | DOM Selektoren & Abfragen | querySelector(), querySelectorAll(), CSS-Selektoren, Attributselektoren, Pseudo-Klassen, $$() |
 | dom-test/ | DOM Manipulation | innerHTML, Element-Inhalte setzen, Template Literals im DOM |
 | artikellaenge/ | CSS-Klasse per Textlänge | classList.add(), innerHTML.length, querySelector()-Kurzschreibweise, Guard Clauses |
