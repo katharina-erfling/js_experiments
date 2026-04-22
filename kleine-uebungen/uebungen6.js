@@ -62,6 +62,28 @@ console.log('..........');
 
 
 
+/*Übung 0 - Null/ Undefined*/
+console.log('Übung 0 - Null/ Undefined');
+
+let jobTitle = null;
+let department;
+console.log(jobTitle);
+console.log(department);
+
+
+
+
+console.log('..........');
+
+
+
+
+
+
+
+
+
+
 
 /*Übung 1 - Rechner*/
 console.log('Übung 1 - Rechner');

@@ -40,7 +40,7 @@ console.log('..........');
 console.log('Übung 3 - Lotto oder der »49-Seiten Würfel«');
 
 prompt("Drücke OK um zu würfeln");
-console.log(Math.floor(Math.random() * 49) + 1);
+alert(Math.floor(Math.random() * 49) + 1);
 
 console.log('..........');
 
