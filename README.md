@@ -28,15 +28,28 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 │   └── 4_asynchrones-arbeiten/
 │       ├── uebung12/
 │       │   ├── data/
-│       │   │   ├── file1.txt
-│       │   │   ├── file2.txt
-│       │   │   ├── file3.txt
-│       │   │   ├── file4.txt
-│       │   │   ├── file5.txt
-│       │   │   └── file6.txt
 │       │   └── uebung12.js
-│       └── uebung13/
-│           └── uebung13.js
+│       ├── uebung13/
+│       │   └── uebung13.js
+│       ├── uebung14/
+│       │   └── grades_table.js
+│       ├── uebung15/
+│       │   └── uebung15.js
+│       ├── uebung16/
+│       │   ├── index.html
+│       │   └── uebung16.js
+│       ├── uebung17/
+│       │   ├── index.html
+│       │   └── inventory.js
+│       ├── uebung18/
+│       │   ├── index.html
+│       │   └── uebung18.js
+│       ├── uebung19/
+│       │   ├── index.html
+│       │   └── uebung19.js
+│       └── uebung21/
+│           ├── index.html
+│           └── uebung21.js
 ├── dom-abfragen/           ← DOM Selektoren & Abfragen
 │   ├── index.html
 │   └── js/
@@ -88,8 +101,15 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | uebungen11.js | Objekte | Objekte erstellen, Punkt- & Bracket-Notation, Methoden, this, Destructuring, Renaming-Destructuring, Default-Werte, Rest-Operator, Shorthand Properties, CSV-Verarbeitung |
 | uebungen12.js | Rekursion | Rekursive Summe, Kombinatorik (Pascal'sches Dreieck), Fibonacci mit Memoization, String-Umkehrung, Maximum in Array, Tiefe verschachtelter Arrays, Summe verschachtelter Arrays |
 | uebungen-asynchron.js | Asynchrones Arbeiten | async/await, fetch, Promise, .then(), .catch(), Promise.all(), setTimeout, fs.readFile, rekursive Verzögerung, Chaining |
-| 4_asynchrones-arbeiten/uebung12/ | Promise.all – Sechs Dateien einlesen | Promise.all(), fs.readFile, Node.js fs-Modul, paralleles Einlesen |
-| 4_asynchrones-arbeiten/uebung13/ | DNS-Lookup per Promise | dns.lookup(), Node.js dns-Modul, Promise, IPv4 |
+| uebung12/ | Promise.all – Sechs Dateien parallel einlesen | Promise.all(), fs.readFile, Node.js fs-Modul |
+| uebung13/ | DNS-Lookup per Promise | dns.lookup(), Node.js dns-Modul, Promise, IPv4 |
+| uebung14/ | Notentabelle – 2D Arrays | Mehrdimensionale Arrays, Indexzugriff, push(), reduce(), map(), Durchschnittsberechnung |
+| uebung15/ | Einkaufsliste – 2D Arrays | Mehrdimensionale Arrays, Indexzugriff, Werte ersetzen |
+| uebung16/ | Geoquiz – Hauptstädte | find(), verschachtelte Arrays, Indexzugriff |
+| uebung17/ | Lagerbestand – 3D Arrays | 3D Arrays, push(), Indexzugriff, Kategorien & Regale |
+| uebung18/ | 3D Array Zugriff | 3D Arrays, gezielter Indexzugriff, Werte ändern |
+| uebung19/ | Bildbearbeitung – Helligkeit | 3D Arrays, map(), Math.min(), RGB-Werte, Pixelmanipulation |
+| uebung21/ | Pokémon Evolution | verschachtelte Arrays, find(), includes(), indexOf(), slice() |
 | dom-abfragen/ | DOM Selektoren & Abfragen | querySelector(), querySelectorAll(), CSS-Selektoren, Attributselektoren, Pseudo-Klassen, $$() |
 | dom-test/ | DOM Manipulation | innerHTML, Element-Inhalte setzen, Template Literals im DOM |
 | artikellaenge/ | CSS-Klasse per Textlänge | classList.add(), innerHTML.length, querySelector()-Kurzschreibweise, Guard Clauses |
