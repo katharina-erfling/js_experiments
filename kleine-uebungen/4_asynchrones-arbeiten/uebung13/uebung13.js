@@ -1,3 +1,9 @@
+'use strict';
+
+ // ── Übung 13 - Das Telefonbuch des Internets ───────────────────────────────────────────────────
+
+console.log('Übung 13 - Das Telefonbuch des Internets');
+
 const dns = require('dns')
 const IP_V = 4
 const URL = 'lilyversell.de'
@@ -17,6 +23,5 @@ const getIP = (url, ip) => {
 getIP(URL, IP_V)
     .then((data) => console.log(`IP address = ${data.address}`))
     .catch((err) => console.error(err));
-
 
 
