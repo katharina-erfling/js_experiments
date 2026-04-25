@@ -23,7 +23,20 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 │   ├── uebungen9.js
 │   ├── uebungen10.js
 │   ├── uebungen11.js
-│   └── uebungen12.js
+│   ├── uebungen12.js
+│   ├── uebungen-asynchron.js
+│   └── 4_asynchrones-arbeiten/
+│       ├── uebung12/
+│       │   ├── data/
+│       │   │   ├── file1.txt
+│       │   │   ├── file2.txt
+│       │   │   ├── file3.txt
+│       │   │   ├── file4.txt
+│       │   │   ├── file5.txt
+│       │   │   └── file6.txt
+│       │   └── uebung12.js
+│       └── uebung13/
+│           └── uebung13.js
 ├── dom-abfragen/           ← DOM Selektoren & Abfragen
 │   ├── index.html
 │   └── js/
@@ -74,6 +87,9 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | uebungen10.js | Higher Order Functions | sort() mit Vergleichsfunktion, map(), filter(), forEach(), reduce(), some(), every(), includes(), endsWith(), Callback-Parameter, verschachtelte Arrow Functions |
 | uebungen11.js | Objekte | Objekte erstellen, Punkt- & Bracket-Notation, Methoden, this, Destructuring, Renaming-Destructuring, Default-Werte, Rest-Operator, Shorthand Properties, CSV-Verarbeitung |
 | uebungen12.js | Rekursion | Rekursive Summe, Kombinatorik (Pascal'sches Dreieck), Fibonacci mit Memoization, String-Umkehrung, Maximum in Array, Tiefe verschachtelter Arrays, Summe verschachtelter Arrays |
+| uebungen-asynchron.js | Asynchrones Arbeiten | async/await, fetch, Promise, .then(), .catch(), Promise.all(), setTimeout, fs.readFile, rekursive Verzögerung, Chaining |
+| 4_asynchrones-arbeiten/uebung12/ | Promise.all – Sechs Dateien einlesen | Promise.all(), fs.readFile, Node.js fs-Modul, paralleles Einlesen |
+| 4_asynchrones-arbeiten/uebung13/ | DNS-Lookup per Promise | dns.lookup(), Node.js dns-Modul, Promise, IPv4 |
 | dom-abfragen/ | DOM Selektoren & Abfragen | querySelector(), querySelectorAll(), CSS-Selektoren, Attributselektoren, Pseudo-Klassen, $$() |
 | dom-test/ | DOM Manipulation | innerHTML, Element-Inhalte setzen, Template Literals im DOM |
 | artikellaenge/ | CSS-Klasse per Textlänge | classList.add(), innerHTML.length, querySelector()-Kurzschreibweise, Guard Clauses |
@@ -86,7 +102,7 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 ---
 
 ## 🛠️ Technologien
-JavaScript (ES6+) · HTML5 · CSS3
+JavaScript (ES6+) · Node.js · HTML5 · CSS3
 
 ---
 
