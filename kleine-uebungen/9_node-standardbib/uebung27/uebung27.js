@@ -5,11 +5,12 @@
 console.log('Übung 27: Ohne Umwege');
 
 const fs = require('fs');
-const zlib = require('zlib');
+const zlib = require('zlib'); // Node.js-Modul zum Komprimieren (hier: gzip)
 
 const STOCK_WARN_AMOUNT = 5;
 
 
+// Wandelt eine CSV-Zeile in ein HTML-<li>-Element um (gleiche Logik wie Übung 23)
 const recordToHTML = (record) => {
   const fields = record.split(',');
   const html = `<li class="list-group-item">
@@ -22,24 +23,26 @@ const recordToHTML = (record) => {
         : ''
     }
   </li>`;
-
   return html;
-
 };
 
 
+// Datei ASYNCHRON einlesen (anders als in Übung 23 – blockiert den Thread nicht)
+// Der Callback wird aufgerufen sobald die Datei geladen ist
 fs.readFile('data/products.csv', 'UTF8', (err, data) => {
-    if (err) {
-        console.error(err);
-        return;
-    }
+  if (err) {
+    console.error(err);
+    return; // frühzeitiger Abbruch – kein throw, weil wir in einem Callback sind
+  }
 
-    const products = data.split('\n');
-    products.shift();
+  const products = data.split('\n');
+  products.shift(); // Header-Zeile entfernen
 
-    const entries = products.filter((row) => row !== '').map(recordToHTML);
+  const entries = products
+    .filter((row) => row !== '')
+    .map(recordToHTML);
 
-    writeToFile(entries);
+  writeToFile(entries);
 });
 
 
@@ -64,14 +67,16 @@ const writeToFile = (entries) => {
   </body>
 </html>`;
 
-
   const html = `${headerStr}
     <ul class="list-group">
     ${entries.join('')}
   </ul>${footerStr}`;
 
   try {
+    // HTML-String → gzip-komprimierter Buffer
     const compressed = zlib.gzipSync(html);
+
+    // Komprimierte Datei schreiben (.gz = gzip-Format, z.B. für Webserver-Auslieferung)
     fs.writeFileSync('data/products.html.gz', compressed);
   } catch (err) {
     console.error(err);
@@ -79,5 +84,4 @@ const writeToFile = (entries) => {
   }
 
   console.log('file written');
-
 };
