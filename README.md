@@ -47,9 +47,13 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 │       ├── uebung19/
 │       │   ├── index.html
 │       │   └── uebung19.js
-│       └── uebung21/
-│           ├── index.html
-│           └── uebung21.js
+│       ├── uebung21/
+│       │   ├── index.html
+│       │   └── uebung21.js
+│       ├── uebung22/
+│       │   └── uebung22.js
+│       └── uebung23/
+│           └── uebung23.js
 ├── dom-abfragen/           ← DOM Selektoren & Abfragen
 │   ├── index.html
 │   └── js/
@@ -110,6 +114,8 @@ Dieses Repo wächst mit – neue Experimente kommen regelmäßig dazu.
 | uebung18/ | 3D Array Zugriff | 3D Arrays, gezielter Indexzugriff, Werte ändern |
 | uebung19/ | Bildbearbeitung – Helligkeit | 3D Arrays, map(), Math.min(), RGB-Werte, Pixelmanipulation |
 | uebung21/ | Pokémon Evolution | verschachtelte Arrays, find(), includes(), indexOf(), slice() |
+| uebung22/ | Cocktail Mixer – Funktionskomposition | every(), includes(), find(), Funktionen als Argumente, spezialisierte Wrapper-Funktion |
+| uebung23/ | Fetch API – Einfache Datenabfrage | async/await, fetch(), response.ok, .json(), try/catch, HTTP-Fehlerbehandlung |
 | dom-abfragen/ | DOM Selektoren & Abfragen | querySelector(), querySelectorAll(), CSS-Selektoren, Attributselektoren, Pseudo-Klassen, $$() |
 | dom-test/ | DOM Manipulation | innerHTML, Element-Inhalte setzen, Template Literals im DOM |
 | artikellaenge/ | CSS-Klasse per Textlänge | classList.add(), innerHTML.length, querySelector()-Kurzschreibweise, Guard Clauses |
