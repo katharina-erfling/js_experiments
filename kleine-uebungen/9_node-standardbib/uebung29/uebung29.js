@@ -1,23 +1,36 @@
 'use strict';
 
-// ── Übung 28: Passwortgenerator ──────────────────────────
+// ── Übung 29: Datenströme ──────────────────────────
 
-console.log('Übung 28: Passwortgenerator');
+console.log('Übung 29: Datenströme');
 
-const crypto = require('crypto'); // Node.js-Modul für kryptografisch sichere Zufallszahlen
+const fs = require('fs');
+const zlib = require('zlib');
 
-const PASSWORTH_LENGTH = 10;
+// Erstellt einen Transform-Stream: nimmt Daten rein, gibt gzip-komprimierte Daten raus
+const gzipCompressor = zlib.createGzip();
 
-// Erlaubte Zeichen – bewusst ohne l, I, O, 0, 1 (leicht verwechselbar)
-const s = '23456789abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXYZ!.,;#$%/+*';
+// ReadStream: liest die Datei in Chunks (nicht alles auf einmal im RAM)
+const inputStream = fs.createReadStream('products.html');
 
-// Erzeugt einen Buffer mit 10 kryptografisch zufälligen Bytes (Werte 0–255)
-// Sicherer als Math.random(), das NICHT für Passwörter geeignet ist
-const buf = crypto.randomBytes(PASSWORTH_LENGTH);
+// WriteStream: schreibt die komprimierten Chunks in die Zieldatei
+const outputStream = fs.createWriteStream('products.html.gz');
 
-const password = Array.from(buf)       // Buffer → Array von Zahlen (0–255)
-    .map(byte => s.charAt(byte % s.length)) // Zahl → Zeichen aus dem Alphabet
-    // byte % s.length → Index zwischen 0 und 65
-    .join(''); // Array → String
 
-console.log(password);
+// Event: wird für jeden eingehenden Datenchunk gefeuert
+// → Chunk direkt in den Kompressor schreiben
+inputStream.on('data', data => {
+    gzipCompressor.write(data);
+});
+
+// Event: wird gefeuert wenn der Kompressor einen komprimierten Chunk fertig hat
+// → komprimierten Chunk in die Ausgabedatei schreiben
+gzipCompressor.on('data', data => {
+    outputStream.write(data);
+});
+
+// Event: inputStream ist fertig → Kompressor schließen
+// gzipCompressor.end() signalisiert: keine Daten mehr, gzip-Footer schreiben
+inputStream.on('end', () => {
+    gzipCompressor.end();
+});
